@@ -15,7 +15,7 @@ public class UserController {
 
 
 
-    @PostMapping("user/register")
+    @PostMapping("register")
     public ApiResponse signUp(@RequestBody UserDto.Create signUp){
         return userService.signUp(signUp);
     }
